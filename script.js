@@ -1,21 +1,24 @@
-const days = document.getElementById('days');
 const hours = document.getElementById('hours');
 const minutes = document.getElementById('minutes');
 const seconds = document.getElementById('seconds');
 const countdown = document.getElementById('countdown');
-const year = document.getElementById('year')
 const loading = document.getElementById('loading');
 
-const currentYear = new Date().getFullYear();
-
-const newYearTime = new Date("2025-01-29T00:00:00");
-
-// Set background year
+// Tạo thời gian đích là 2 phút từ thời điểm hiện tại
+const currentTime = new Date();
+const newYearTime = new Date(currentTime.getTime() + 2 * 60000); // 2 phút = 2 * 60000 milliseconds
 
 // Update countdown time
 function updateCountdown() {
     const currentTime = new Date();
     const diff = newYearTime - currentTime;
+
+    // Nếu đã đến thời điểm đích (hoặc đã qua)
+    if (diff <= 0) {
+        // Chuyển hướng sang trang pháo hoa
+        window.location.href = '/n';
+        return;
+    }
 
     // Tính toán giờ, phút, giây còn lại
     const h = Math.floor(diff / 1000 / 60 / 60) % 24;
