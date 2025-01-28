@@ -1,19 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8" />
-<title>Happy new year 2025 🎆</title>
-
-<link href="./style.css" rel="stylesheet" />
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Happy new year 2025 🎆</title>
+    <!-- Sửa đường dẫn để trỏ vào thư mục n -->
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: #000;
+        }
+        canvas {
+            display: block;
+        }
+        #info {
+            position: fixed;
+            top: 20px;
+            width: 100%;
+            text-align: center;
+            z-index: 100;
+        }
+    </style>
 </head>
 <body>
-
-<div id="info">
-	<p style="color:#e1e1b8;" ><b>^^ Click chuột để bắn 🤗🤗🤗</b></p>
-</div>
-
-<canvas id="canvas">Canvas không hổ trợ trình duyệt của bạn.</canvas>
-<script type="text/javascript" src="./script.js"> </script>
+    <div id="info">
+        <p style="color:#e1e1b8;margin:0;font-size:18px;">
+            <b>^^ Click chuột để bắn 🤗🤗🤗</b>
+        </p>
+    </div>
+    <canvas id="canvas">Canvas không hỗ trợ trình duyệt của bạn.</canvas>
+    <!-- Sửa đường dẫn để trỏ vào thư mục n -->
+    <script src="./script.js" type="text/javascript"></script>
 </body>
 </html>
