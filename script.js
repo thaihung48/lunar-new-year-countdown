@@ -6,7 +6,7 @@ const loading = document.getElementById('loading');
 
 // Tạo thời gian đích là 2 phút từ thời điểm hiện tại
 const currentTime = new Date();
-const newYearTime = new Date(currentTime.getTime() + 2 * 60000); // 2 phút = 2 * 60000 milliseconds
+const newYearTime = new Date(currentTime.getTime() + 2 * 10000); // 2 phút = 2 * 60000 milliseconds
 
 // Update countdown time
 function updateCountdown() {
