@@ -4,7 +4,7 @@ const seconds = document.getElementById('seconds');
 const countdown = document.getElementById('countdown');
 const loading = document.getElementById('loading');
 
-const newYearTime = new Date("2025-01-29T00:00:00");
+const newYearTime = new Date("2025-02-17T00:00:00");
 
 // Update countdown time
 function updateCountdown() {
